@@ -162,7 +162,7 @@
 
         <!-- the letter that rises out (نفس تصميم الغلاف) -->
         <div class="env-letter">
-          <img src="cover.jpg" alt="الدعوة">
+          <img src="assets/cover.jpg" alt="الدعوة">
         </div>
 
         <!-- front pocket -->
@@ -217,7 +217,7 @@
        لإظهاره: حط رابط/مسار تصميمك في src بتاع #coverImg تحت.
        سيبه فاضي = القسم ده بيختفي تلقائياً والموقع يبدأ من الـ hero. -->
   <section id="cover" class="hidden relative w-full min-h-[100svh] overflow-hidden">
-    <img id="coverImg" src="cover.jpg" alt="غلاف الدعوة"
+    <img id="coverImg" src="assets/cover.jpg" alt="غلاف الدعوة"
          class="absolute inset-0 w-full h-full object-cover">
     <!-- scroll cue -->
     <button id="coverDown" aria-label="استمرار"
@@ -322,7 +322,7 @@
       <p class="kicker text-sm text-muted mb-4">لحظات</p>
       <h2 class="font-display font-bold text-ink mb-10" style="font-size:clamp(1.9rem,7vw,2.4rem)">بعض ذكرياتنا</h2>
 
-      <!-- ضع صورك في gallery/1.jpg ... 6.jpg
+      <!-- ضع صورك في assets/gallery/1.jpg ... 6.jpg
            لحد ما ترفعها، بيظهر placeholder أنيق تلقائياً. -->
       <div id="gallery" class="grid grid-cols-2 gap-2.5"></div>
     </section>
@@ -351,7 +351,8 @@
 
 <!-- Background music: حسين الجسمي — ادخلي عمري (يبدأ بعد فتح الظرف) -->
 <audio id="bgm" loop preload="auto">
-  <source src="music.mp3" type="audio/mpeg">
+  <source src="assets/music.mp3" type="audio/mpeg">
+  <source src="assets/music.m4a" type="audio/mp4">
 </audio>
 
 <script>
@@ -406,7 +407,7 @@ GAL.innerHTML = Array.from({length:6}, (_,i)=>`
       </svg>
       <span>لقطة قريبة</span>
     </div>
-    <img loading="lazy" alt="لقطة ${i+1}" src="gallery/${i+1}.jpg" onerror="this.remove()">
+    <img loading="lazy" alt="لقطة ${i+1}" src="assets/gallery/${i+1}.jpg" onerror="this.remove()">
   </div>`).join('');
 
 /* ---------- Reveal on scroll ---------- */

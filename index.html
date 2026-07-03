@@ -351,8 +351,8 @@
 
 <!-- Background music: حسين الجسمي — ادخلي عمري (يبدأ بعد فتح الظرف) -->
 <audio id="bgm" loop preload="auto">
-  <source src="assets/music.mp3" type="audio/mpeg">
-  <source src="assets/music.m4a" type="audio/mp4">
+  <source src="music.mp3" type="audio/mpeg">
+  <source src="music.m4a" type="audio/mp4">
 </audio>
 
 <script>
@@ -407,7 +407,7 @@ GAL.innerHTML = Array.from({length:6}, (_,i)=>`
       </svg>
       <span>لقطة قريبة</span>
     </div>
-    <img loading="lazy" alt="لقطة ${i+1}" src="assets/gallery/${i+1}.jpg" onerror="this.remove()">
+    <img loading="lazy" alt="لقطة ${i+1}" src="gallery/${i+1}.jpg" onerror="this.remove()">
   </div>`).join('');
 
 /* ---------- Reveal on scroll ---------- */
